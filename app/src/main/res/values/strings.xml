@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mastermind</string>
+    <string name="check">Check</string>
+    <string name="retry">Retry</string>
+    <string name="title_success">Success!</string>
+    <string name="title_game_over">Game Over</string>
+    <string name="message_success">You found the correct sequence 🎉</string>
+    <string name="message_game_over">Time is up ⏱️</string>
+</resources>
