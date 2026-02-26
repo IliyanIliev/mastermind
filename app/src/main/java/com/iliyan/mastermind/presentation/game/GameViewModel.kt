@@ -31,7 +31,7 @@ class GameViewModel(
     private val _gameState = MutableStateFlow(GameState())
     val gameState: StateFlow<GameState> = _gameState.asStateFlow()
 
-    private val _events = Channel<GameEvent>()
+    private val _events = Channel<GameEvent>(Channel.BUFFERED)
     val events = _events.receiveAsFlow()
 
     init {
