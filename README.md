@@ -31,7 +31,7 @@ All business rules are isolated from Android framework code.
 
 ### Data Layer
 
-A repository abstraction is used between presentation and domain logic.
+The repository abstraction is defined in the domain layer and consumed by the domain use cases. Its concrete implementation resides in the data layer and is injected via dependency injection.
 
 In this specific example the repository is very thin, but I kept it to demonstrate clean separation and to show how the architecture would scale if the game logic were backed by a database or remote source.
 
